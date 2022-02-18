@@ -82,10 +82,10 @@ for item in contours:
     height = rect[3]
     if (weight > (3*height)) and (weight < (4*height)):
         car = raw_car0[y:y+height, x:x+weight]
-        #保存和展示图像
+        #保存图像
         cv2.imwrite('./car_license/test.png',car)
 
 
-#保存图片并展示图片
+#展示图片
 show = cv2.imread('./car_license/test.png')
 plt_show0(show)
